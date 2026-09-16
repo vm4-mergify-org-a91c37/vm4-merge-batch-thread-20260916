@@ -1,0 +1,10 @@
+merge_queue:
+  max_parallel_checks: 1
+queue_rules:
+  - name: default
+    batch_size: 2
+    batch_max_wait_time: 1 minute
+    merge_method: merge-batch
+    branch_protection_injection_mode: merge
+    queue_conditions: true
+    merge_conditions: true
